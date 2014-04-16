@@ -9,7 +9,7 @@ class OkayTest extends Specification {
     project = ProjectBuilder.builder().build()
   }
 
-  def "apply java and idea"() {
+  def "apply groovy plugin"() {
     expect:
     project.apply(plugin: 'groovy')
   }
