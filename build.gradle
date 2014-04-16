@@ -1,0 +1,17 @@
+//apply plugin: 'idea'
+apply plugin: 'groovy'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile (
+    gradleApi(),
+    localGroovy(),
+  )
+
+  testCompile (
+    'org.spockframework:spock-core:0.7-groovy-1.8'
+  )
+}
